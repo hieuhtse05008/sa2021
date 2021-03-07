@@ -1,0 +1,5 @@
+-rw-r--r-- 1 nang nang   308 Mar  6 09:41 README.md
+-rw-r--r-- 1 nang nang    58 Mar  6 12:03 minimal.tex
+-rw-r--r-- 1 nang nang 16850 Mar  6 12:30 report_1.pdf
+-rw-r--r-- 1 nang nang    69 Mar  7 10:11 report_1.tex
+-rw-r--r-- 1 root root   183 Mar  7 10:08 users
