@@ -1,0 +1,58 @@
+\documentclass{article}
+\begin{document}
+
+TASK 1:
+
+dx@frontend:~ who
+dx       pts/0        Mar  7 10:26 (171.224.179.138)
+dx       pts/2        Mar  7 10:36 (171.224.179.138)
+
+TASK 2:
+nang@DESKTOP-LE6U6KG:~/master/sa2021 ps
+  PID TTY          TIME CMD
+    9 pts/0    00:00:00 bash
+ 6435 pts/0    00:00:00 ps
+
+TASK 3:
+dx@frontend:~ who
+dx       pts/0        Mar  7 10:26 (171.224.179.138)
+dx       pts/2        Mar  7 10:36 (171.224.179.138)
+
+
+TASK 5:
+nang@DESKTOP-LE6U6KG:~/master/sa2021 head -n 3 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+
+nang@DESKTOP-LE6U6KG:~/master/sa2021 tail -n 3 /etc/passwd
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+nang:x:1000:1000:,,,:/home/nang:/bin/bash
+
+TASK 6: 
+nang@DESKTOP-LE6U6KG:~/master/sa2021  sed -n 5,8p /etc/passwd
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+
+TASK 7:
+nang@DESKTOP-LE6U6KG:~/master ls -lR
+.:
+total 4
+drwxr-xr-x 3 nang nang 4096 Mar  7 10:10 sa2021
+
+./sa2021:
+total 36
+-rw-r--r-- 1 nang nang   308 Mar  6 09:41 README.md
+-rw-r--r-- 1 nang nang    58 Mar  6 12:03 minimal.tex
+-rw-r--r-- 1 nang nang 16850 Mar  6 12:30 report 1.pdf
+-rw-r--r-- 1 nang nang    69 Mar  7 10:11 report 1.tex
+-rw-r--r-- 1 root root   183 Mar  7 10:08 users
+
+TASK 8:
+nang@DESKTOP-LE6U6KG:~/master/sa2021 removed=`diff -u compareFile1.txt compareFile2.txt | grep " -" | grep " -" | grep -v " ---" | wc -l`; added=`diff -u compareFile1.txt compareFile2.txt | grep " +" | grep -v " +++" | wc -l`; firstcount=`cat compareFile1.txt | wc -l`; secondcount=`cat compareFile2.txt | wc -l`; percent=(( ((secondcount - added) * 100) / (firstcount))); echo percent
+66
+
+\end{document}
