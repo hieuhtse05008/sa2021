@@ -1,0 +1,5 @@
+  PID TTY          TIME CMD
+    8 pts/0    00:00:00 bash
+26767 pts/0    00:00:00 07.practical.wo
+26768 pts/0    00:00:00 bash
+26769 pts/0    00:00:00 ps

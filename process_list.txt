@@ -1,0 +1,8 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 12:31 ?        00:00:00 /init
+root         6     1  0 12:31 ?        00:00:00 /init
+root         7     6  0 12:31 ?        00:00:11 /init
+nang         8     7  0 12:31 pts/0    00:00:00 -bash
+nang     26718     7  0 15:04 pts/0    00:00:00 ./07.practical.work.shell.pipe
+nang     26719     7  0 15:05 pts/0    00:00:00 /bin/bash -c ps -ef > process_list.txt 
+nang     26720 26719  0 15:05 pts/0    00:00:00 ps -ef
